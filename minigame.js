@@ -1,7 +1,7 @@
 // script bordelique by Kévin Lavigne
 
 function RedirectionJavascript(){
-    document.location.href="accueil.html";
+    document.location.href="index.html";
 }
 const option1 = document.getElementById('option1')
 const option2 = document.getElementById('option2')
@@ -160,12 +160,12 @@ class Character {
             void gameText2.offsetWidth;
             void gameText3.offsetWidth;
             gameText1.classList.add("animated-text")
-            gameText1.innerHTML = "No way to find your way by yourself. Your vision is blurred, you start to lose consciousness .";
+            gameText1.innerHTML = "No way to find your way by yourself. Your vision is blurred, you start to lose consciousness.";
             void gameText2.offsetWidth;
             void gameText3.offsetWidth;
-            gameText2.innerHTML = "";
-            gameText3.innerHTML = "";
-            setInterval(RedirectionJavascript, 10000)
+            gameText2.innerHTML = "You Lose!!! ";
+            gameText3.innerHTML = " ";
+
          }
             if (this.life <= 0 && this.name === "wolf") {
                endOfFight()    
